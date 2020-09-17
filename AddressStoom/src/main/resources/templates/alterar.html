@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Alterar</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+	<h1><center>Alterar</center></h1>
+	<form class="container" method="post" action="/alterar" th:object="${address}">
+	<input type="hidden" th:field="*{id}">
+	<div class="row">
+		<div class="input-field col s10">
+			Endereço: <input type="text" value="" name="streetName" th:field="*{streetName}"/><br><br>
+		</div>
+		<div class="input-field col s1">
+			Nº:<input type="number"  value="" name="number" th:field="*{number}" /><br><br>
+		</div>
+	</div>	
+	
+	<div class="row">
+		<div class="input-field col s4">
+			Complemento: <input type="text" value="" name="complement" th:field="*{complement}" /><br><br>
+		</div>
+		<div class="input-field col s4">
+			Bairro:<input type="text"  value="" name="neighbourhood" th:field="*{neighbourhood}"/><br><br>
+		</div>
+		<div class="input-field col s3">
+			CEP:<input type="number"  value="" name="zipcode" th:field="*{zipcode}"/><br><br>
+		</div>
+	</div>	
+	
+		<div class="row">
+		<div class="input-field col s4">
+			Cidade: <input type="text" value="" name="city" th:field="*{city}"/><br><br>
+		</div>
+		<div class="input-field col s4">
+			Estado:<input type="text"  value="" name="state" th:field="*{state}"/><br><br>
+		</div>
+		<div class="input-field col s4">
+			País:<input type="text"  value="" name="country" th:field="*{country}"/><br><br>
+		</div>
+	</div>	
+	
+		<div class="row">
+		<div class="input-field col s6">
+			Latitude: <input type="number" value="" name="latitude" th:field="*{latitude}"/><br><br>
+		</div>
+		<div class="input-field col s6">
+			Longitude:<input type="number"  value="" name="longitude"  th:field="*{longitude}"/><br><br>
+		</div>
+	</div>	
+	
+	
+	<br><br>
+	
+	<a href="/address-stoom" class="waves-effect waves-light btn">Inicio</a>
+	
+	<button type="submit" class="waves-effect waves-light btn">Salvar</button>
+	
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	
+</body>
+</html>
