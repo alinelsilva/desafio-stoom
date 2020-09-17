@@ -26,19 +26,19 @@ public class Address {
 	
 	
 	
-	public Address(String city, String complement, String country, long latitude, long longitude, 
-			String neighbourhood, int number,  String state, String streetName,   int zipcode ) {
-		this.streetName = streetName;
-		this.number = number;
-		this.complement = complement;
-		this.neighbourhood = neighbourhood;
-		this.city = city;
-		this.state = state;
-		this.country = country;
-		this.zipcode = zipcode;
-		this.latitude = latitude;
-		this.longitude = longitude;
-	}
+//	public Address(String city, String complement, String country, long latitude, long longitude, 
+//			String neighbourhood, int number,  String state, String streetName,   int zipcode ) {
+//		this.streetName = streetName;
+//		this.number = number;
+//		this.complement = complement;
+//		this.neighbourhood = neighbourhood;
+//		this.city = city;
+//		this.state = state;
+//		this.country = country;
+//		this.zipcode = zipcode;
+//		this.latitude = latitude;
+//		this.longitude = longitude;
+//	}
 	public long getId() {
 		return id;
 	}
